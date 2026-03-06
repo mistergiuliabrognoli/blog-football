@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post | Maria Giulia Brognoli</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .post-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            margin-bottom: 80px;
+        }
+
+        .post-hero-img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .post-body {
+            padding: 50px;
+        }
+
+        .post-header {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .post-header h1 {
+            font-size: 2.8rem;
+            color: var(--secondary);
+            font-weight: 800;
+            line-height: 1.2;
+            margin: 15px 0;
+        }
+
+        .markdown-content h2 {
+            color: var(--secondary);
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 2rem;
+            font-weight: 700;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+
+        .markdown-content h3 {
+            color: var(--text);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .markdown-content p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            color: #334155;
+            line-height: 1.8;
+        }
+
+        .markdown-content ul,
+        .markdown-content ol {
+            margin-bottom: 20px;
+            padding-left: 20px;
+            font-size: 1.1rem;
+            color: #334155;
+        }
+
+        .markdown-content li {
+            margin-bottom: 10px;
+        }
+
+        .markdown-content blockquote {
+            border-left: 4px solid var(--primary);
+            padding-left: 20px;
+            margin: 30px 0;
+            font-style: italic;
+            color: var(--secondary);
+            background: rgba(98, 196, 126, 0.1);
+            padding: 20px;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .back-link:hover {
+            color: var(--primary);
+        }
+
+        @media (max-width: 768px) {
+            .post-body {
+                padding: 30px 20px;
+            }
+
+            .post-header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background-texture"></div>
+
+    <nav class="glass-navbar">
+        <div class="nav-content">
+            <h1 class="logo">M.G. BROGNOLI <span class="badge">UEFA C</span></h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="allenamenti.html">Allenamenti</a></li>
+                <li><a href="forum.html">Forum</a></li>
+                <li><a href="io.html">Io</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <a href="blog.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Torna al Blog</a>
+
+        <article class="post-container">
+            <img class="post-hero-img" id="post-image" src="" alt="Copertina Articolo">
+
+            <div class="post-body">
+                <header class="post-header">
+                    <span class="date" id="post-date" style="font-size: 1rem;"></span>
+                    <h1 id="post-title">Caricamento in corso...</h1>
+                    <span class="badge"
+                        style="background:var(--primary);color:var(--secondary);font-size:0.9rem;">Pubblicazione</span>
+                </header>
+
+                <div id="markdown-content" class="markdown-content">
+                    <p>Lettura file markdown...</p>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <!-- Libreria Marked.js per convertire Markdown in HTML -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+{
+    "blog": [
+        {
+            "id": "il-microciclo.md",
+            "title": "Il microciclo settimanale nella mia squadra",
+            "date": "6 Marzo 2026",
+            "image": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?q=80&w=800",
+            "excerpt": "Oggi voglio condividere come imposto i carichi di lavoro durante la settimana. Molti pensano che l'allenamento fisico sia solo \"co...",
+            "tags": [
+                "Nuovo"
+            ],
+            "timestamp": 1772805077.0752707
+        }
+    ],
+    "allenamenti": [
+        {
+            "id": "01-possesso-palla.md",
+            "title": "Lo smarcamento e il possesso palla (4v4+3)",
+            "date": "6 Marzo 2026",
+            "image": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?q=80&w=800",
+            "excerpt": "Questo è uno dei miei esercizi base preferiti per abituare la squadra a trovare linee di passaggio sotto pressione.",
+            "tags": [
+                "Nuovo"
+            ],
+            "timestamp": 1772805075.0698473
+        }
+    ]
+}

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Io | Maria Giulia Brognoli</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .about-layout {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 60px;
+            margin-top: 40px;
+            margin-bottom: 80px;
+        }
+
+        .profile-image-container {
+            position: relative;
+        }
+
+        .profile-image-container img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+            border-radius: 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .glass-badge {
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid white;
+            padding: 20px 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+
+        .glass-badge h4 {
+            color: var(--secondary);
+            font-size: 1.5rem;
+            font-weight: 800;
+        }
+
+        .glass-badge span {
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-right: 20px;
+        }
+
+        .about-content h1 {
+            font-size: 4rem;
+            color: var(--secondary);
+            line-height: 1;
+            letter-spacing: -2px;
+            margin-bottom: 25px;
+            font-weight: 800;
+        }
+
+        .about-text {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            line-height: 1.8;
+            margin-bottom: 40px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .glass-social-btn {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            padding: 15px 30px;
+            border-radius: 100px;
+            text-decoration: none;
+            color: var(--secondary);
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+        }
+
+        .glass-social-btn:hover {
+            transform: translateY(-3px);
+            background: white;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .glass-social-btn i {
+            font-size: 1.4rem;
+        }
+
+        .btn-wa:hover {
+            color: #25D366;
+            border-color: #25D366;
+        }
+
+        .btn-in:hover {
+            color: #0077b5;
+            border-color: #0077b5;
+        }
+
+        .btn-ig:hover {
+            color: #E1306C;
+            border-color: #E1306C;
+        }
+
+        @media (max-width: 900px) {
+            .about-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .profile-image-container img {
+                height: 400px;
+            }
+
+            .about-content {
+                padding-right: 0;
+                padding-top: 40px;
+            }
+
+            .about-content h1 {
+                font-size: 3rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background-texture"></div>
+
+    <nav class="glass-navbar">
+        <div class="nav-content">
+            <h1 class="logo">M.G. BROGNOLI <span class="badge">UEFA C</span></h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="allenamenti.html">Allenamenti</a></li>
+                <li><a href="forum.html">Forum</a></li>
+                <li><a href="io.html" class="active">Io</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="about-layout">
+            <div class="profile-image-container">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1200"
+                    alt="Maria Giulia Brognoli">
+                <div class="glass-badge">
+                    <h4>UEFA C</h4>
+                    <span>Allenatrice Qualificata</span>
+                </div>
+            </div>
+
+            <div class="about-content">
+                <h1>Maria Giulia Brognoli</h1>
+
+                <div class="about-text">
+                    <p>Appassionata di calcio, tattica e preparazione atletica. Il mio obiettivo è quello di unire le
+                        metodologie scientifiche moderne allo sviluppo cognitivo e tecnico del calciatore. Credo
+                        fermamente che un allenamento situazionale ad alta intensità sia la chiave per dominare la
+                        domenica sul campo.</p>
+                    <br>
+                    <p>In questo spazio condivido le mie esercitazioni, i miei pensieri calcistici e confronto le mie
+                        idee con altri allenatori appassionati. Che tu alleni in terza categoria o nei professionisti,
+                        il campo parla sempre la stessa lingua.</p>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/maria-giulia-brognoli-1a3188370/" target="_blank"
+                        class="glass-social-btn btn-in">
+                        <i class="fa-brands fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://www.instagram.com/mister.giulia?igsh=MTcxaWk0OXcyanlxdQ%3D%3D&utm_source=qr"
+                        target="_blank" class="glass-social-btn btn-ig">
+                        <i class="fa-brands fa-instagram"></i> Instagram
+                    </a>
+                    <a href="https://chat.whatsapp.com/D0c10deaFlE41cyJlrcplL?mode=gi_t" target="_blank"
+                        class="glass-social-btn btn-wa">
+                        <i class="fa-brands fa-whatsapp"></i> Chat WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

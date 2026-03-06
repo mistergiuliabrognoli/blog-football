@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum | Maria Giulia Brognoli</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .forum-layout {
+            height: calc(100vh - 120px);
+            /* Account for navbar */
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .full-glass-chat {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            border-radius: 24px;
+            padding: 30px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .chat-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        .chat-header h2 {
+            font-size: 1.8rem;
+            color: var(--secondary);
+            font-weight: 800;
+        }
+
+        .online-count {
+            color: var(--primary);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .online-dot {
+            width: 10px;
+            height: 10px;
+            background: var(--primary);
+            border-radius: 50%;
+            animation: blink 2s infinite;
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.4;
+            }
+        }
+
+        /* Re-use chat messages from style.css but make them larger */
+        .chat-messages {
+            padding-right: 15px;
+            gap: 25px;
+        }
+
+        .message {
+            max-width: 70%;
+        }
+
+        .avatar {
+            width: 45px;
+            height: 45px;
+            font-size: 1rem;
+        }
+
+        .bubble {
+            padding: 15px 20px;
+            font-size: 1.05rem;
+        }
+
+        .chat-input-container {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .chat-input-container input {
+            padding: 18px 25px;
+            font-size: 1.1rem;
+            border-radius: 16px;
+        }
+
+        .chat-input-container button {
+            width: 58px;
+            height: 58px;
+            border-radius: 16px;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background-texture"></div>
+
+    <nav class="glass-navbar">
+        <div class="nav-content">
+            <h1 class="logo">M.G. BROGNOLI <span class="badge">UEFA C</span></h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="allenamenti.html">Allenamenti</a></li>
+                <li><a href="forum.html" class="active">Forum</a></li>
+                <li><a href="io.html">Io</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container forum-layout">
+        <div class="full-glass-chat">
+            <div class="chat-header">
+                <h2>Discussione Live Allenatori</h2>
+                <div class="online-count">
+                    <div class="online-dot"></div> 42 utenti online
+                </div>
+            </div>
+
+            <div id="tlkio" data-channel="brognoli-allenatori" data-theme="theme--minimal"
+                style="width:100%;height:100%;"></div>
+            <script async src="https://tlk.io/embed.js" type="text/javascript"></script>
+        </div>
+    </main>
+</body>
+
+</html>
